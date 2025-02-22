@@ -27,7 +27,7 @@ body {
   --color-primary-950: #052d2e;
     
   /* stratos */
-  /* --color-secondary: #00003d;
+  --color-secondary: #00003d;
   --color-secondary-50: #e4efff;
   --color-secondary-100: #cfe0ff;
   --color-secondary-200: #a8c4ff;
@@ -38,10 +38,10 @@ body {
   --color-secondary-700: #0010ff;
   --color-secondary-800: #000ee4;
   --color-secondary-900: #0005b0;
-  --color-secondary-950: #00003d; */
+  --color-secondary-950: #00003d;
 
   /* Blue-Violet */
-  --color-secondary-50: #f0f4fd;
+  /* --color-secondary-50: #f0f4fd;
   --color-secondary-100: #e3eafc;
   --color-secondary-200: #cdd7f8;
   --color-secondary-300: #aebef3;
@@ -51,7 +51,7 @@ body {
   --color-secondary-700: #4947bb;
   --color-secondary-800: #3c3c97;
   --color-secondary-900: #363779;
-  --color-secondary-950: #202046;
+  --color-secondary-950: #202046; */
 
 
 
@@ -69,7 +69,8 @@ body {
   --color-accent-900: #4e580f;
   --color-accent-950: #2a3201;
 
-  --color-background: #0a0a0a;
+  /* --color-background: #0a0a0a; */
+  --color-background: #11131F;
   --color-foreground: #ededed;
   --color-background-dark: #010104;
 
