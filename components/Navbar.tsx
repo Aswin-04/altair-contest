@@ -12,7 +12,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className='border-b-primary-100/30 relative flex w-full flex-wrap border-b text-sm sm:flex-nowrap sm:justify-start backdrop-blur-xl'>
+    <header className='border-secondary-400/25 relative flex w-full flex-wrap border-b  text-sm sm:flex-nowrap sm:justify-start backdrop-blur-xl'>
       <nav className='mx-auto w-full max-w-[90rem] px-4 py-3 sm:flex sm:items-center sm:justify-between'>
         <div className='flex items-center justify-between'>
           <a className='flex-none text-xl font-semibold focus:opacity-80 focus:outline-none'>
