@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar"
+import Explore from "@/pages/Explore"
 import Hero from "@/pages/Hero"
 
 export default function Home() {
@@ -7,6 +8,9 @@ export default function Home() {
       <Navbar></Navbar>
       <section>
         <Hero></Hero>
+      </section>
+      <section>
+        <Explore></Explore>
       </section>
     </main>
   )
