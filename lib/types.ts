@@ -4,3 +4,10 @@ export interface SliderDataProps {
   img: StaticImageData
   title: string
 }
+
+export interface ResourceDataProps {
+  id: number
+  description: string
+  linkName: string 
+  link: string
+}
