@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function ChooseModel() {
   return (
-    <div className='flex flex-col-reverse lg:flex-row w-full mx-auto '>
+    <div className='flex flex-col-reverse lg:flex-row w-full mx-auto'>
       <div className='lg:w-1/2 flex justify-center mt-10 lg:mt-0'>
         <div className='max-w-xl'>
           <Image src={carImg} alt={'car-img'} className=''></Image>
@@ -12,7 +12,7 @@ export default function ChooseModel() {
       </div>
       <div className='w-full lg:w-1/2'>
         <h3 className='text-2xl font-medium mb-4  text-white p-3 mt-4 lg:mt-0 text-center lg:text-left'>Choose Your Model</h3>
-        <div className='px-5 py-10 bg-gray-900 flex flex-col items-center justify-center rounded-lg'>
+        <div className='px-5 py-10 bg-gray-900 flex flex-col items-center justify-center rounded-lg border border-primary/80'>
           <div>
             <div className='flex gap-4 mb-8 items-center'>
               <div className='shrink-0 w-10 h-10 rounded-full bg-secondary-500 text-white flex justify-center items-center text-xl font-mono'>

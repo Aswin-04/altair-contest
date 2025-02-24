@@ -1,6 +1,7 @@
 import Challenge from '@/components/Challenge'
 import ChooseModel from '@/components/ChooseModel'
 import FocusAreas from '@/components/FocusAreas'
+import RegistrationTimeline from '@/components/RegistrationTimeline'
 import ResourcesProvided from '@/components/ResourcesProvided'
 
 export default function Explore() {
@@ -17,6 +18,9 @@ export default function Explore() {
       </div>
       <div className='padding-b max-w-[1440px] mx-auto'>
         <ResourcesProvided></ResourcesProvided>
+      </div>
+      <div className='padding-b max-w-[1440px] mx-auto'>
+        <RegistrationTimeline></RegistrationTimeline>
       </div>
     </section>
   )

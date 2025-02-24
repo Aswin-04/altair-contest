@@ -58,3 +58,31 @@ export const ResourcesData = [
     link: 'https://web.altair.com/global-student-contest-2023'
   }
 ];
+
+
+export const registrationTimeline = [
+  {
+    id:1,
+    event: "Registration Starts",
+    date: "February 5, 2025",
+    description: "Begin your journey by registering for the Altair optimization challenge."
+  },
+  {
+    id:2,
+    event: "Registration Ends",
+    date: "March 10, 2025",
+    description: "Last date to register. Make sure to complete your registration before the deadline."
+  },
+  {
+    id:3,
+    event: "Submission Deadline",
+    date: "March 17, 2025",
+    description: "Last day to submit your submission. Try not to miss the deadline."
+  },
+  {
+    id:4,
+    event: "Result Announcement",
+    date: "March 24, 2025 (Tentative)",
+    description: "The Altair Optimization Challenge winners will be revealed."
+  }
+]
