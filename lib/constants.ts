@@ -4,6 +4,7 @@ import img3 from '@/public/img-3.png'
 import img4 from '@/public/img-4.png'
 import img5 from '@/public/img-5.jpg'
 
+import { icon1, icon2, icon3, icon4, icon5 } from './icons'
 
 export const sliderData = [
   { img: img1, title: 'Structural Optimization' },
@@ -86,3 +87,45 @@ export const registrationTimeline = [
     description: "The Altair Optimization Challenge winners will be revealed."
   }
 ]
+
+export const submissionGuidelines1 = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Altair Inspire Structures Professional Certification",
+    description: "Validate your expertise in structural simulation and optimization with industry-recognized credentials for career advancement."
+  },
+  {
+    id: 2,
+    icon: icon2,
+    title: "Inspire Solved File (.stmod)",
+    description: "Include all boundary conditions and optimization parameters in your .stmod file for full technical compliance with contest standards."
+  },
+  {
+    id: 3,
+    icon: icon3,
+    title: "Analysis Report (PPT, PDF, or DOC)",
+    description: "Present a comprehensive analysis correlating simulation results with performance goals across structural, dynamic, and fluid domains."
+  },
+  {
+    id: 4,
+    icon: icon4,
+    title: "Submit a video recording of the process on YouTube and share the link",
+    description: "Showcase your problem-solving approach through a narrated video, demonstrating Inspire’s capabilities in addressing the contest’s open-ended challenge."
+  }
+];
+
+export const submissionGuidelines2 = [
+  {
+    id: 1,
+    icon: icon2,
+    title: "Zip your files and rename the archive as 'CUSAT_YourName.zip'",
+    description: "Package all submission components (certification, .stmod file, report, and video link) into one archive. Follow naming conventions for efficient judge tracking and verification."
+  },
+  {
+    id: 2,
+    icon: icon5,
+    title: "Upload your zipped file",
+    description: "Upload your optimized solution package through the official contest portal. Ensure all files are accessible and meet technical requirements before final submission."
+  }
+];

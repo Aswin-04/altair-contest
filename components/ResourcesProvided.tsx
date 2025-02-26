@@ -8,7 +8,7 @@ export default function ResourcesProvided() {
   return (
     <div className=" flex flex-col lg:flex-row w-full">
       <div className=" w-full lg:w-1/2">
-        <h3 className='text-2xl font-medium mb-4 rounded-2xl text-white p-3 mt-8 lg:mt-0 text-center lg:text-left'>Resources Provided</h3>
+        <h3 className='text-2xl font-medium mb-4 rounded-2xl text-primary p-3 mt-8 lg:mt-0 text-center lg:text-left font-mono'>Resources Provided</h3>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-8 bg-gray-900 rounded-lg border border-primary/80">
           <div className="px-5 py-10 flex flex-col items-center justify-center">
           <div>

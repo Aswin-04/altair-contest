@@ -11,7 +11,7 @@ export default function ChooseModel() {
         </div>
       </div>
       <div className='w-full lg:w-1/2'>
-        <h3 className='text-2xl font-medium mb-4  text-white p-3 mt-4 lg:mt-0 text-center lg:text-left'>Choose Your Model</h3>
+        <h3 className='text-2xl font-medium mb-4  text-primary p-3 mt-4 lg:mt-0 text-center lg:text-left font-mono'>Choose Your Model</h3>
         <div className='px-5 py-10 bg-gray-900 flex flex-col items-center justify-center rounded-lg border border-primary/80'>
           <div>
             <div className='flex gap-4 mb-8 items-center'>

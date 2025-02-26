@@ -10,7 +10,7 @@ export default function Challenge() {
         optimization results, showcasing how you’ve improved the design based on
         specific engineering criteria.
       </p>
-      <p className='text-center text-2xl sm:text-2xl mb-8 text-white font-medium'>
+      <p className='text-center text-2xl sm:text-2xl mb-8 text-primary font-medium font-mono'>
         Focus Areas Include:
       </p>
       <FocusAreas></FocusAreas>
