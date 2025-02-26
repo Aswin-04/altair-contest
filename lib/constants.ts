@@ -4,7 +4,7 @@ import img3 from '@/public/img-3.png'
 import img4 from '@/public/img-4.png'
 import img5 from '@/public/img-5.jpg'
 
-import { icon1, icon2, icon3, icon4, icon5 } from './icons'
+import { icon1, icon2, icon3, icon4, icon5, medal1, medal2, medal3 } from './icons'
 
 export const sliderData = [
   { img: img1, title: 'Structural Optimization' },
@@ -129,3 +129,21 @@ export const submissionGuidelines2 = [
     description: "Upload your optimized solution package through the official contest portal. Ensure all files are accessible and meet technical requirements before final submission."
   }
 ];
+
+export const prizePool = [
+  {
+    id: 2,
+    icon: medal2,
+    amount: 5000,
+  },
+  {
+    id: 1,
+    icon: medal1,
+    amount: 10000,
+  },
+  {
+    id: 3,
+    icon: medal3,
+    amount: 2500
+  }
+]

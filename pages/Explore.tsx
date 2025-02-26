@@ -1,5 +1,6 @@
 import Challenge from '@/components/Challenge'
 import ChooseModel from '@/components/ChooseModel'
+import PrizePool from '@/components/PrizePool'
 import RegistrationTimeline from '@/components/RegistrationTimeline'
 import ResourcesProvided from '@/components/ResourcesProvided'
 import SubmissionInstructions from '@/components/SubmissionInstructions'
@@ -25,6 +26,10 @@ export default function Explore() {
       <div className='padding-b max-w-[1440px] mx-auto'>
         <SubmissionInstructions></SubmissionInstructions>
       </div>
+      <div className='padding-b max-w-[1440px] mx-auto'>
+        <PrizePool></PrizePool>
+      </div>
+
     </section>
   )
 }
