@@ -12,7 +12,7 @@ export default function PrizePool() {
               <div className="w-36 text-accent mt-10">
                 {prize.icon}
               </div>
-              <div className="mt-10 text-5xl font-semibold font-inter">
+              <div className="mt-10 text-5xl font-semibold font-inter tracking-tight">
                 &#8377;{prize.amount}
               </div>
             </div>

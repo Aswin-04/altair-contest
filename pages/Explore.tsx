@@ -29,7 +29,6 @@ export default function Explore() {
       <div className='padding-b max-w-[1440px] mx-auto'>
         <PrizePool></PrizePool>
       </div>
-
     </section>
   )
 }

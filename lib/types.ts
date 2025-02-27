@@ -11,3 +11,10 @@ export interface ResourceDataProps {
   linkName: string 
   link: string
 }
+
+export interface ContactInfoProps {
+  name: string
+  email: string
+  phone: string
+  hasLogo: boolean
+}

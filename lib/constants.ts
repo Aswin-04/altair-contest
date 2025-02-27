@@ -147,3 +147,25 @@ export const prizePool = [
     amount: 2500
   }
 ]
+
+export const contactInfoAltair = [
+  {
+    name: "Harika Manthena",
+    phone: "+91 63092 98466",
+    email: "hmanthena@altair.com",
+    hasLogo: true
+  },
+  {
+    name: "Guru Charan Kotthuru",
+    phone: "+91 93923 94354",
+    email: "guruc@altair.com",
+    hasLogo: true
+  },
+  {
+    name: "Ramesha BS",
+    phone: "+91 91777 70258",
+    email: "rambs@altair.com",
+    hasLogo: true
+  }
+]
+ 
