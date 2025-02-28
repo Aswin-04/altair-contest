@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import ContactUs from "@/pages/ContactUs"
 import Explore from "@/pages/Explore"
@@ -24,6 +25,7 @@ export default function Home() {
       <section>
         <ContactUs></ContactUs>
       </section>
+      <Footer></Footer>
     </main>
   )
 }

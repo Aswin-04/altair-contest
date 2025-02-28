@@ -10,10 +10,13 @@ export default function Challenge() {
         optimization results, showcasing how you’ve improved the design based on
         specific engineering criteria.
       </p>
-      <p className='text-center text-2xl sm:text-2xl mb-8 text-primary font-medium font-mono'>
-        Focus Areas Include:
-      </p>
-      <FocusAreas></FocusAreas>
+      <div className="padding-y px-8">
+        <p className='text-center text-2xl sm:text-2xl mb-8 text-primary font-medium font-mono'>
+          Focus Areas Include:
+        </p>
+        <FocusAreas></FocusAreas>
+
+      </div>
     </div>
   )
 }
