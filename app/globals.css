@@ -2,7 +2,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* scroll-padding: (--scroll-padding, 5rem); */
 }
 
 body {
@@ -112,52 +111,14 @@ body {
     @apply sm:pb-24 pb-12;
   }
 
-  .gradient-1 {
-    @apply bg-gradient-to-r from-[#3fd2c7] to-[#00003d] bg-clip-text text-transparent;
-  }
+
   
   .gradient-2 {
     @apply bg-gradient-to-r from-[#3fd2c7] to-[#acbc00] bg-clip-text text-transparent;
   }
-  
-  .gradient-3 {
-    @apply bg-gradient-to-r from-[#0005b0] to-[#acbc00] bg-clip-text text-transparent;
-  }
-
-  .gradient-4 {
-    @apply bg-gradient-to-r from-[#3fd2c7] to-[#135c5b] bg-clip-text text-transparent;
-  }
-
-  .gradient-5 {
-    background: radial-gradient(#3fd2c7, #127370);
-    @apply bg-clip-text text-transparent;
-  }
-
-  .gradient-6 {
-    @apply bg-gradient-to-r from-[#acbc00] to-[#2a3201] bg-clip-text text-transparent;
-  }
-
-  .gradient-7 {
-    @apply bg-gradient-to-bl from-[#123230] via-[#37bcb3] to-[#123230] bg-clip-text text-transparent
-  }
-  
+    
   .gradient-8 {
     @apply bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] bg-clip-text text-transparent
   }
 
-  .text-radial-primary-secondary {
-    background: radial-gradient(#3fd2c7, #00003d);
-    @apply bg-clip-text text-transparent;
-  }
-  
-  .text-radial-primary-accent {
-    background: radial-gradient(#3fd2c7, #acbc00);
-    @apply bg-clip-text text-transparent;
-  }
-  
-  .text-radial-secondary-accent {
-    background: radial-gradient(#00003d, #acbc00);
-    @apply bg-clip-text text-transparent;
-  }
-  
 }

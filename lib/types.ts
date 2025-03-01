@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image"
+import { StaticImageData } from 'next/image'
 
 export interface SliderDataProps {
   img: StaticImageData
@@ -8,7 +8,7 @@ export interface SliderDataProps {
 export interface ResourceDataProps {
   id: number
   description: string
-  linkName: string 
+  linkName: string
   link: string
 }
 

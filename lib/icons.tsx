@@ -177,7 +177,7 @@ export const instagramIcon = (
 
 export const menuClose = (
   <svg
-    className='size-5 shrink-0 transition-transform duration-300 ease-in-out  rotate-90 scale-100'
+    className='size-5 shrink-0 scale-100 rotate-90 transition-transform duration-300 ease-in-out'
     xmlns='http://www.w3.org/2000/svg'
     width='24'
     height='24'
@@ -195,7 +195,7 @@ export const menuClose = (
 
 export const menuOpen = (
   <svg
-    className='size-5 shrink-0 transition-transform duration-300 ease-in-out rotate-0 scale-100'
+    className='size-5 shrink-0 scale-100 rotate-0 transition-transform duration-300 ease-in-out'
     xmlns='http://www.w3.org/2000/svg'
     width='24'
     height='24'

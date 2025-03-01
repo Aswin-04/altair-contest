@@ -8,27 +8,29 @@ import SubmissionInstructions from '@/components/SubmissionInstructions'
 export default function Explore() {
   return (
     <section className=''>
-      <div className='max-w-[1440px] mx-auto padding-y ' >
+      <div className='padding-y mx-auto max-w-[1440px]'>
         <Challenge></Challenge>
       </div>
       <div className='padding-y'>
         <div className='flex justify-center'>
-          <h2 className='text-center text-4xl mb-8 lg:mb-16 gradient-2 font-semibold'>How to Participate</h2>
+          <h2 className='gradient-2 mb-8 text-center text-4xl font-semibold lg:mb-16'>
+            How to Participate
+          </h2>
         </div>
-        <div className='max-w-[1440px] mx-auto'>
+        <div className='mx-auto max-w-[1440px]'>
           <ChooseModel></ChooseModel>
         </div>
       </div>
-      <div className='padding-y max-w-[1440px] mx-auto'>
+      <div className='padding-y mx-auto max-w-[1440px]'>
         <ResourcesProvided></ResourcesProvided>
       </div>
-      <div className='padding-y max-w-[1440px] mx-auto'>
+      <div className='padding-y mx-auto max-w-[1440px]'>
         <RegistrationTimeline></RegistrationTimeline>
       </div>
-      <div className='padding-y max-w-[1440px] mx-auto'>
+      <div className='padding-y mx-auto max-w-[1440px]'>
         <SubmissionInstructions></SubmissionInstructions>
       </div>
-      <div className='padding-y max-w-[1440px] mx-auto'>
+      <div className='padding-y mx-auto max-w-[1440px]'>
         <PrizePool></PrizePool>
       </div>
     </section>

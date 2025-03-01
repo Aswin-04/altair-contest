@@ -3,11 +3,15 @@ import { submissionGuidelines1, submissionGuidelines2 } from '@/lib/constants'
 export default function SubmissionInstructions() {
   return (
     <div>
-      <div className='flex justify-center mb-6'>
-        <h2 className='gradient-2 mb-4 text-center text-4xl font-semibold'>Submission Instructions</h2>
+      <div className='mb-6 flex justify-center'>
+        <h2 className='gradient-2 mb-4 text-center text-4xl font-semibold'>
+          Submission Instructions
+        </h2>
       </div>
-      <div className='max-w-3xl mx-auto px-8 sm:px-16 py-8 rounded-xl border border-primary/80 bg-gray-900'>
-        <h3 className='text-primary font-mono text-2xl font-semibold'>What to Submit</h3>
+      <div className='border-primary/80 mx-auto max-w-3xl rounded-xl border bg-gray-900 px-8 py-8 sm:px-16'>
+        <h3 className='text-primary font-mono text-2xl font-semibold'>
+          What to Submit
+        </h3>
         {submissionGuidelines1.map(guideline => (
           <div
             key={guideline.id}
@@ -26,8 +30,10 @@ export default function SubmissionInstructions() {
         ))}
       </div>
 
-      <div className='max-w-3xl mx-auto px-8 sm:px-16 py-8 rounded-xl border border-primary/80 mt-16 bg-gray-900'>
-        <h3 className='text-primary font-mono text-2xl font-semibold'>How to Submit</h3>
+      <div className='border-primary/80 mx-auto mt-16 max-w-3xl rounded-xl border bg-gray-900 px-8 py-8 sm:px-16'>
+        <h3 className='text-primary font-mono text-2xl font-semibold'>
+          How to Submit
+        </h3>
         {submissionGuidelines2.map(guideline => (
           <div
             key={guideline.id}
