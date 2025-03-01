@@ -4,9 +4,11 @@ export default function RegistrationTimeline() {
   return (
     <section>
       <div>
-        <h2 className='text-secondary-400 mb-4 text-center text-3xl font-semibold sm:text-4xl'>
-          Registration Timeline
-        </h2>
+        <div className='flex justify-center mb-6'>
+          <h2 className='gradient-2 mb-4 text-center text-4xl font-semibold'>
+            Registration Timeline
+          </h2>
+        </div>
         <div className='bg-gray-900 text-gray-400  max-w-3xl mx-auto rounded-xl border border-primary/80'>
           <div className='container mx-auto flex flex-wrap px-8 sm:px-16 py-16 '>
             {registrationTimeline.map( timelineEvent => (

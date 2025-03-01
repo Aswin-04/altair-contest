@@ -1,45 +1,50 @@
 import Image from 'next/image'
+import heroImg from '@/public/hero-img4.jpg'
 
 export default function Hero() {
   return (
-    <main className='max-w-[1440px] mx-auto mt-20 lg:mt-16 padding-y'>
-      <section className='flex flex-col'>
-        <h1 className='bg-gradient-to-bl from-[#1e293b] via-[#3b30ff] to-[#1e293b] bg-clip-text text-transparent
- text-center text-3xl sm:text-5xl font-sans tracking-tight font-bold mb-4'>
-          Altair Optimization Contest 2025
-        </h1>
-        <p className='text-center text-md sm:text-xl text-foreground/80 font-inter'>
-          Showcase your engineering skills and tackle a real-world optimization
-          contest with Altair Inspire!
-        </p>
-      </section>
+    <main className='padding-t mx-auto mt-20 max-w-[1440px] lg:mt-16'>
 
-      <section>
-        <div className='container mx-auto flex flex-col lg:flex-row items-center mt-24 md:gap-16 lg:gap-24 '>
-          <div className='lg:max-w-lg lg:w-full mad:w-1/2 w-5/6 md:mb-0 mb-10'>
-            <Image
-              className='object-cover object-center rounded'
-              src={'https://dummyimage.com/720x600'}
-              alt='Hero'
-              width={720}
-              height={600}
-            ></Image>
-          </div>
-          <div className='lg:grow lg:w-1/2 flex flex-col'>
-            <h2 className='text-3xl sm:text-4xl mb-4 font-semibold text-secondary-400 text-center lg:text-left'>About the Contest</h2>
-            <p className='mb-8 leading-relaxed text-foreground/80 sm:text-lg font-inter'>
-              <b>Altair® Inspire™</b> transforms simulation into a
-              simple and powerful tool for design optimization. With its
-              intuitive interface and comprehensive features, Inspire helps you
-              push the boundaries of component design and accelerate product
-              development from concept to reality. Whether you are aiming for
-              performance or manufacturability, Inspire offers a seamless
-              experience to create, optimize, and study innovative parts and
-              assemblies.
-            </p>
-          </div>
+      <div className='flex flex-col justify-between gap-20'>
+        <div className='flex flex-col items-center'>
+          <h1 className='mb-4 bg-gradient-to-bl from-[#1e293b] via-[#3b30ff] to-[#1e293b] bg-clip-text text-center font-sans text-3xl font-bold tracking-tight text-transparent sm:text-5xl'>
+            Altair Optimization Contest 2025
+          </h1>
+          <p className=' text-foreground/80 font-inter text-center text-md max-w-md'>
+            Showcase your engineering skills and tackle a real-world optimization
+            contest with Altair Inspire!
+          </p>
         </div>
-      </section>
+
+        <div className='container max-w-3xl mx-auto'>
+          <Image
+            className='rounded-xl object-cover object-center'
+            src={heroImg}
+            alt='Hero'
+            priority={true}
+          ></Image>
+        </div>
+
+      </div>
+
+      <div className='container mx-auto padding-t max-w-3xl mt-10'>
+        <div className=''>
+          <div className='flex justify-center mb-6 '>
+            <h2 className=' text-center text-4xl font-semibold  gradient-2 '>
+              About the Contest
+            </h2>
+          </div>
+          <p className='text-foreground/80 font-inter text-center mb-8 leading-relaxed sm:text-md'>
+            <b>Altair® Inspire™</b> transforms simulation into a simple and
+            powerful tool for design optimization. With its intuitive interface
+            and comprehensive features, Inspire helps you push the boundaries of
+            component design and accelerate product development from concept to
+            reality. Whether you are aiming for performance or
+            manufacturability, Inspire offers a seamless experience to create,
+            optimize, and study innovative parts and assemblies.
+          </p>
+        </div>
+      </div>
     </main>
   )
 }

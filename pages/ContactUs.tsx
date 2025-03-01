@@ -6,7 +6,9 @@ export default function ContactUs() {
     <div>
       <section className="">
         <div className="">
-          <h2 className="text-center text-3xl sm:text-4xl mb-8 lg:mb-16 text-secondary-400 font-semibold">Contact Us</h2>
+          <div className="flex justify-center">
+            <h2 className="gradient-2 text-center text-4xl sm:text-5xl mb-8 lg:mb-16 font-semibold">Contact Us</h2>
+          </div>
           <div className="mb-10 flex justify-center items-center">
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full max-w-5xl gap-y-10 lg:place-items-center">
               {contactInfoAltair.map(info => (

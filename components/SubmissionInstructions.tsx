@@ -3,7 +3,9 @@ import { submissionGuidelines1, submissionGuidelines2 } from '@/lib/constants'
 export default function SubmissionInstructions() {
   return (
     <div>
-      <h2 className='text-secondary-400 mb-4 text-center text-3xl font-semibold sm:text-4xl'>Submission Instructions</h2>
+      <div className='flex justify-center mb-6'>
+        <h2 className='gradient-2 mb-4 text-center text-4xl font-semibold'>Submission Instructions</h2>
+      </div>
       <div className='max-w-3xl mx-auto px-8 sm:px-16 py-8 rounded-xl border border-primary/80 bg-gray-900'>
         <h3 className='text-primary font-mono text-2xl font-semibold'>What to Submit</h3>
         {submissionGuidelines1.map(guideline => (

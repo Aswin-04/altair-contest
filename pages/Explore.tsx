@@ -12,7 +12,9 @@ export default function Explore() {
         <Challenge></Challenge>
       </div>
       <div className='padding-y'>
-        <h2 className='text-center text-3xl sm:text-4xl mb-8 lg:mb-16 text-secondary-400 font-semibold'>How to Participate</h2>
+        <div className='flex justify-center'>
+          <h2 className='text-center text-4xl mb-8 lg:mb-16 gradient-2 font-semibold'>How to Participate</h2>
+        </div>
         <div className='max-w-[1440px] mx-auto'>
           <ChooseModel></ChooseModel>
         </div>
