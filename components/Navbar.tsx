@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import altairLogo from '@/public/altair-logo.png'
 import { useState } from 'react'
+import Link from 'next/link'
+import { navLinks } from '@/lib/constants'
+import { menuClose, menuOpen } from '@/lib/icons'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,85 +14,74 @@ export default function Navbar() {
     setIsMenuOpen(prev => !prev)
   }
 
+  function handleMenuClose() {
+    setIsMenuOpen(false)
+  }
+
+  function handleScroll(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, sectionId: string) {
+    e.preventDefault() // Prevent default anchor behavior
+    
+    const targetElement = document.getElementById(sectionId)
+    if (targetElement) {
+      const navbarHeight = document.querySelector('nav')?.offsetHeight || 0
+      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY
+      const offsetPosition = elementPosition - navbarHeight
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+
+      handleMenuClose()
+    }
+  }
+
   return (
-    <header className='border-secondary-400/25 relative flex w-full flex-wrap border-b  text-sm sm:flex-nowrap sm:justify-start backdrop-blur-xl'>
-      <nav className='mx-auto w-full max-w-[90rem] px-4 py-3 sm:flex sm:items-center sm:justify-between'>
-        <div className='flex items-center justify-between'>
-          <a className='flex-none text-xl font-semibold focus:opacity-80 focus:outline-none'>
-            <span className='font-inter inline-flex items-center gap-x-2 text-xl font-semibold mt-2'>
-              <Image
-                src={altairLogo}
-                alt='altair-logo'
-                className='h-auto w-8'
-              ></Image>
-              ALTAIR
-            </span>
-          </a>
-          <div className='sm:hidden'>
-            <button
-              className='relative flex size-7 items-center justify-center gap-x-2 rounded-lg border focus:outline-none'
-              onClick={handleMenuOpen}
-            >
-              {isMenuOpen ? (
-                <svg
-                  className='size-4 shrink-0'
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                >
-                  <path d='M18 6 6 18' />
-                  <path d='m6 6 12 12' />
-                </svg>
-              ) : (
-                <svg
-                  className='size-4 shrink-0'
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                >
-                  <line x1='3' x2='21' y1='6' y2='6' />
-                  <line x1='3' x2='21' y1='12' y2='12' />
-                  <line x1='3' x2='21' y1='18' y2='18' />
-                </svg>
-              )}
-              <span className='sr-only'>Toggle navigation</span>
-            </button>
+    <header id='nav' className='padding-x py-3 fixed top-0 left-0 z-50 border-b-1  w-full bg-gray-950/50 border-secondary-500/50 backdrop-blur-3xl'>
+      <nav className='max-w-[1440px] mx-auto flex '>
+        {/* altair logo */}
+        <Link href={'#'} className=' block w-fit mr-auto'>
+          <div className='font-inter mt-2 inline-flex items-center gap-x-2 text-xl font-semibold '>
+            <Image
+              src={altairLogo}
+              alt='altair-logo'
+              width={30}
+              height={30}
+              className='w-auto h-auto'
+            ></Image>
+            ALTAIR
+          </div>
+        </Link>
+
+        {/* for large screens md:above */}
+        <ul className='max-md:hidden flex justify-center  gap-8 items-center'>
+          {navLinks.map((item) => (
+            <li key={item.label} className='text-md transition  hover:text-secondary-600 '>
+              <a href={item.to}>{item.label}</a>
+            </li>
+          ))}
+        </ul>
+
+        {/* nav menu */}
+        <div className='md:hidden flex items-center'>
+          <div className='border p-1 rounded-sm' onClick={handleMenuOpen}>
+            {isMenuOpen ? menuClose : menuOpen}
           </div>
         </div>
 
-        <div
-          className={`grow basis-full overflow-hidden transition-all duration-300 ease-in ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} sm:max-h-none opacity-100`}
-        >
-          <div className='mt-5 flex flex-col gap-5 sm:mt-0 sm:flex-row sm:items-center sm:justify-end sm:ps-5'>
-            <a className='font-medium text-neutral-200 hover:text-secondary-400 focus:text-secondary-400 focus:outline-none cursor-pointer transition-colors'>
-              About
-            </a>
-            <a className='font-medium text-neutral-200 hover:text-secondary-400 focus:text-secondary-400 focus:outline-none cursor-pointer'>
-              Explore
-            </a>
-            <a className='font-medium text-neutral-200 hover:text-secondary-400 focus:text-secondary-400 focus:outline-none cursor-pointer'>
-              Register
-            </a>
-            <a className='font-medium text-neutral-200 hover:text-secondary-400 focus:text-secondary-400 focus:outline-none cursor-pointer'>
-              Submit
-            </a>
-            <a className='font-medium text-neutral-200 hover:text-secondary-400 focus:text-secondary-400 focus:outline-none cursor-pointer'>
-              Contact
-            </a>
-          </div>
+        {/* for md:below */}
+        <div onClick={handleMenuClose} className={`${isMenuOpen ? "translate-x-0 opacity-100": "translate-x-100 opacity-0"} transition-all duration-300 ease-in-out absolute left-0 top-[68.5px] h-screen  w-full flex justify-center items-start bg-gray-950/90 backdrop-blur-sm md:hidden`}>
+          <ul className=' space-y-12 mt-20' onClick={(e) => e.stopPropagation()}>
+            {navLinks.map((item) => (
+              <li key={item.label} className='text-lg font-medium transition  hover:text-secondary-600 ' >
+                <a href={item.to} onClick={(e) => {
+                handleScroll(e, item.to.substring(1))
+              }}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
         </div>
+
       </nav>
     </header>
   )

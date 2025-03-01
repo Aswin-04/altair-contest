@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding: (--scroll-padding, 5rem); */
+}
+
 body {
   @apply bg-gray-950/98;
   @apply text-foreground;

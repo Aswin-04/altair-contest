@@ -8,22 +8,24 @@ import Submit from "@/pages/Submit"
 
 export default function Home() {
   return (
-    <main>
-      <Navbar></Navbar>
-      <section>
+    <main className="">
+      <div className="relative">
+        <Navbar></Navbar>
+      </div>
+      <section id="about" className="padding-x">
         <Hero></Hero>
       </section>
-      <section>
+      <section id="explore" className="padding-x">
         <Explore></Explore>
       </section>
-      <section>
+      <section id="register" className="padding" >
         <Register></Register>
       </section>
-      <section>
+      <section id="submit" className="padding">
         <Submit></Submit>
       </section>
-      <section>
-        <ContactUs></ContactUs>
+      <section id="contact" className="padding">
+      <ContactUs></ContactUs>
       </section>
       <Footer></Footer>
     </main>

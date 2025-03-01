@@ -7,8 +7,8 @@ import SubmissionInstructions from '@/components/SubmissionInstructions'
 
 export default function Explore() {
   return (
-    <section className='padding'>
-      <div className='max-w-[1440px] mx-auto' >
+    <section className=''>
+      <div className='max-w-[1440px] mx-auto padding-y ' >
         <Challenge></Challenge>
       </div>
       <div className='padding-y'>
@@ -17,16 +17,16 @@ export default function Explore() {
           <ChooseModel></ChooseModel>
         </div>
       </div>
-      <div className='padding-b max-w-[1440px] mx-auto'>
+      <div className='padding-y max-w-[1440px] mx-auto'>
         <ResourcesProvided></ResourcesProvided>
       </div>
-      <div className='padding-b max-w-[1440px] mx-auto'>
+      <div className='padding-y max-w-[1440px] mx-auto'>
         <RegistrationTimeline></RegistrationTimeline>
       </div>
-      <div className='padding-b max-w-[1440px] mx-auto'>
+      <div className='padding-y max-w-[1440px] mx-auto'>
         <SubmissionInstructions></SubmissionInstructions>
       </div>
-      <div className='padding-b max-w-[1440px] mx-auto'>
+      <div className='padding-y max-w-[1440px] mx-auto'>
         <PrizePool></PrizePool>
       </div>
     </section>

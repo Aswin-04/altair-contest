@@ -1,6 +1,6 @@
 export default function Register() {
   return (
-    <div className="padding-b max-w-[1440px] mx-auto padding-x">
+    <div className="max-w-[1440px] mx-auto padding-x">
       <div className='bg-gray-900 py-12  rounded-xl border border-secondary-400 shadow-lg shadow-secondary-500 px-4'>
           <div className="flex flex-col items-center ">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-sans mb-10 gradient-2 text-center">Register to compete</h2>

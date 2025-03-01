@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto pt-16 pb-8 lg:pt-8 ">
         <div className=" flex flex-col gap-14 padding-x lg:flex-row lg:justify-around lg:items-center">
           <div className=" w-fit bg-white/80 rounded-sm">
-            <Image src={sairamLogo} alt="sairam-logo" width={170} height={100}></Image>
+            <Image src={sairamLogo} alt="sairam-logo" width={170} height={100} className="w-auto h-auto"></Image>
           </div>
           <div>
             <a className='flex-none text-xl font-semibold focus:opacity-80 focus:outline-none'>
